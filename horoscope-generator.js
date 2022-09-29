@@ -18,7 +18,13 @@ const signData = {
     }
 };
 
+//console.log(signData.randomX());
+//console.log(signData.randomY());
+//console.log(signData.randomZ());
 
-console.log(signData.randomX());
-console.log(signData.randomY());
-console.log(signData.randomZ());
+const horoscopeMessage = () => {
+    const randomMessage = `Right now your sign is ${signData.randomX()}, this will bring you ${signData.randomY()}, you should ${signData.randomZ()}.`;
+    return randomMessage;
+};
+
+console.log(horoscopeMessage());
